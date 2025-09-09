@@ -213,7 +213,7 @@ const Tasks = () => {
               
                 {/* Add New Task Input */}
                 {isAddingTask && (
-                  <div className="p-4 bg-transparent border border-[#525252] rounded-[20px] h-[160px]">
+                  <div className="p-4 bg-transparent border border-[#525252] rounded-[20px] min-h-[160px] relative z-10 overflow-visible">
                     {/* Section 1: Title */}
                     <div className="mb-2">
                       <Input
@@ -238,31 +238,31 @@ const Tasks = () => {
                     <div className="border-t border-[#414141] mb-4"></div>
 
                     {/* Section 3: Bottom Section with Action Buttons and Main Buttons */}
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-wrap justify-between items-center gap-2 relative z-20">
                       {/* Action Buttons in Middle (with border) */}
-                      <div className="border border-[#414141] rounded-lg p-2 flex gap-2">
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8">
+                      <div className="border border-[#414141] rounded-lg p-2 flex flex-wrap gap-2 relative z-30 bg-[#1b1b1b]">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
                           Date
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
                           Priority
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
                           Reminder
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
                           Label
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
                           Location
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
                           Deadline
                         </Button>
                       </div>
 
                       {/* Main Action Buttons on Right */}
-                      <div className="flex gap-2">
+                      <div className="flex gap-2 flex-shrink-0">
                         <Button
                           onClick={() => {
                             setIsAddingTask(false);
