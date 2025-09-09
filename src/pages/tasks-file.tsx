@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TasksHeader from '@/components/tasks/TasksHeader';
-import { Plus, CheckCircle, ChevronRight, MoreVertical, FileText, AlignLeft, Calendar, Flag } from 'lucide-react';
+import { Plus, CheckCircle, ChevronRight, MoreVertical, FileText, AlignLeft, Calendar, Flag, Bell, Tag, MapPin, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -240,23 +240,29 @@ const Tasks = () => {
                     {/* Section 3: Bottom Section with Action Buttons and Main Buttons */}
                     <div className="flex flex-wrap justify-between items-center gap-2 relative z-20">
                       {/* Action Buttons in Middle (with border) */}
-                      <div className="border border-[#414141] rounded-lg p-2 flex flex-wrap gap-2 relative z-30 bg-[#1b1b1b]">
+                      <div className="border border-[#414141] rounded-[20px] p-2 flex flex-wrap gap-2 relative z-30 bg-[#1b1b1b]">
                         <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                          <Calendar className="h-4 w-4 mr-2" />
                           Date
                         </Button>
                         <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                          <Flag className="h-4 w-4 mr-2" />
                           Priority
                         </Button>
                         <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                          <Bell className="h-4 w-4 mr-2" />
                           Reminder
                         </Button>
                         <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                          <Tag className="h-4 w-4 mr-2" />
                           Label
                         </Button>
                         <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                          <MapPin className="h-4 w-4 mr-2" />
                           Location
                         </Button>
                         <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                          <Clock className="h-4 w-4 mr-2" />
                           Deadline
                         </Button>
                       </div>
