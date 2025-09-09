@@ -241,27 +241,27 @@ const Tasks = () => {
                     <div className="flex flex-wrap justify-between items-center gap-2 relative z-20">
                       {/* Action Buttons in Middle (with border) */}
                       <div className="border border-[#414141] rounded-[20px] p-2 flex flex-wrap gap-2 relative z-30 bg-[#1b1b1b]">
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
                           <Calendar className="h-4 w-4 mr-2" />
                           Date
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
                           <Flag className="h-4 w-4 mr-2" />
                           Priority
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
                           <Bell className="h-4 w-4 mr-2" />
                           Reminder
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
                           <Tag className="h-4 w-4 mr-2" />
                           Label
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
                           <MapPin className="h-4 w-4 mr-2" />
                           Location
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-[#2A2A2C] px-3 py-1 h-8 whitespace-nowrap">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
                           <Clock className="h-4 w-4 mr-2" />
                           Deadline
                         </Button>
@@ -276,21 +276,21 @@ const Tasks = () => {
                           }}
                           variant="ghost"
                           size="sm"
-                          className="text-gray-400 hover:text-white hover:bg-[#2A2A2C]"
+                          className="border border-[#690707] rounded-[10px] bg-[#391e1e] text-[crimson] hover:bg-[#391e1e] hover:text-[crimson]"
                         >
                           Cancel
                         </Button>
                         <Button
                           variant="ghost"
                           size="sm"
-                          className="text-gray-400 hover:text-white hover:bg-[#2A2A2C]"
+                          className="border border-[#5f5c74] bg-[#13132f] rounded-[10px] text-[#dedede] hover:bg-[#13132f] hover:text-[#dedede]"
                         >
                           Draft
                         </Button>
                         <Button
                           onClick={handleAddTask}
                           size="sm"
-                          className="bg-green-600 hover:bg-green-700 text-white"
+                          className="border border-[#252232] bg-white text-[#252232] rounded-[14px] hover:bg-white hover:text-[#252232]"
                         >
                           Save
                         </Button>
