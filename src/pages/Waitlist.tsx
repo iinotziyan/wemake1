@@ -49,7 +49,7 @@ const Waitlist = () => {
       <div className="w-full max-w-md">
         <div className="bg-[#1a1a1a] rounded-lg p-8 border border-gray-700">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold mb-2">Join Our Waitlist....</h1>
+            <h1 className="text-3xl font-bold mb-2">Join Our Waitlist...</h1>
             <p className="text-gray-400">Enter your email to get early access</p>
           </div>
           
