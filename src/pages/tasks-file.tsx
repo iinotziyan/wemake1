@@ -252,7 +252,7 @@ const Tasks = () => {
                               variant="ghost" 
                               size="sm" 
                               className={cn(
-                                "text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border",
+                                "text-gray-400 hover:text-white hover:border hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 border border-transparent",
                                 !selectedDate && "text-gray-400"
                               )}
                             >
@@ -270,23 +270,23 @@ const Tasks = () => {
                             />
                           </PopoverContent>
                         </Popover>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 border border-transparent">
                           <Flag className="h-4 w-4 mr-2" />
                           Priority
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 border border-transparent">
                           <Bell className="h-4 w-4 mr-2" />
                           Reminder
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 border border-transparent">
                           <Tag className="h-4 w-4 mr-2" />
                           Label
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 border border-transparent">
                           <MapPin className="h-4 w-4 mr-2" />
                           Location
                         </Button>
-                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 hover:border">
+                        <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:border hover:border-[#252232] hover:bg-[#1e1e1f] hover:rounded-[8px] px-3 py-1 h-8 whitespace-nowrap transition-all duration-200 border border-transparent">
                           <Clock className="h-4 w-4 mr-2" />
                           Deadline
                         </Button>
